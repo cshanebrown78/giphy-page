@@ -26,13 +26,29 @@ $(".aircraft").on("click", function() {
             var rating = results[j].rating;
             var par = $("<p>").text("Rating: " + rating);
             var aircraftImage = $("<img>");
-            aircraftImage.attr("src", results[j].images.fixed_width_still.url);
-            aircraftImage.attr("data-animate", "still")
+            aircraftImage.attr("src", results[j].images.fixed_height_still.url);
+            aircraftImage.attr("data-still", results[j].images.fixed_height_still.url);
+            aircraftImage.attr("data-animate", results[j].images.fixed_height.url);
+            aircraftImage.attr("data-state", "still");
+            aircraftImage.addClass("gif");
             gDiv.prepend(par);
             gDiv.prepend(aircraftImage);
             $(".gifs").prepend(gDiv);
         }
 
+        $(".gif").on("click", function() { 
+            var state = $(this).attr("data-state");
+            console.log(state);
+            console.log(this);
+
+            if (state === "still") {
+                $(this).attr("src", $(this).attr("data-animate"));
+                $(this).attr("data-state", "animate");
+            } else {
+                $(this).attr("src", $(this).attr("data-still"));
+                $(this).attr("data-state", "still")
+            };
+        });
 
     });
 });
