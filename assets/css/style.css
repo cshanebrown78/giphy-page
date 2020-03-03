@@ -4,4 +4,9 @@
 
 div .gif-images {
     display: inline-block;
+    margin-left: 5px;
+}
+
+.gifs-container {
+    margin-top: 20px;
 }

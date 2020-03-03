@@ -38,8 +38,8 @@ $(".aircraft").on("click", function() {
 
         $(".gif").on("click", function() { 
             var state = $(this).attr("data-state");
-            console.log(state);
-            console.log(this);
+            // console.log(state);
+            // console.log(this);
 
             if (state === "still") {
                 $(this).attr("src", $(this).attr("data-animate"));
