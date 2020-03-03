@@ -24,11 +24,12 @@ $(".aircraft").on("click", function() {
         for(var j = 0; j < results.length; j++) {
             var gDiv = $("<div class='gif-images'>");
             var rating = results[j].rating;
-            var par = $("<div>").text("Rating: " + rating);
+            var par = $("<p>").text("Rating: " + rating);
             var aircraftImage = $("<img>");
-            aircraftImage.attr("src", results[j].images.fixed_height.url);
+            aircraftImage.attr("src", results[j].images.fixed_width_still.url);
+            aircraftImage.attr("data-animate", "still")
             gDiv.prepend(par);
-            gDiv.append(aircraftImage);
+            gDiv.prepend(aircraftImage);
             $(".gifs").prepend(gDiv);
         }
 
