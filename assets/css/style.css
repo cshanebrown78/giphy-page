@@ -10,3 +10,15 @@ div .gif-images {
 .gifs-container {
     margin-top: 20px;
 }
+
+.gifs-container {
+    width: 70%;
+    float: left;
+}
+
+.newbtn-container {
+    margin-top: 20px;
+    width: 30%;
+    float: right;
+}
+    
