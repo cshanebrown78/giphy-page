@@ -11,20 +11,20 @@
 <body>
     <div class = "aircraft-container">
         <div class = "aircraft-buttons"></div>
-        <div class = "gifs-container">
-            
-            <div class = "gifs"></div>
-            
-        </div>
+
+            <div class = "newbtn-container">
+                <form class = "new-button">
+                    <label for="add-aircraft">Add an aircraft:</label><br>
+                    <input type="text" id="add-aircraft" name="add-aircraft"><br>
+                    <button class="btn btn-primary new-aircraft" id="add-topic">Submit</button>
+                </form>
+            </div>
+
+            <div class = "gifs-container">
+                <div class = "gifs"></div>
+            </div>
     </div>
 
-    <div class = "newbtn-container">
-        <form class = "new-button">
-            <label for="aname">Add an aircraft:</label><br>
-            <input type="text" id="aname" name="aname"><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
     <script src="assets/javascript/giphy.js"></script>
 </body>
 </html>
