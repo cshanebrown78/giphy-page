@@ -1,7 +1,7 @@
 // $(document).ready(function() {
 
     // Array that holds the topics for the gifs
-    var topics = ["airplane", "helicopter", "spaceship", "glider", "f-16", "f-22", "f-35", "p51 Mustang", "cessna", "cirrus sr22", "boeing", "falcon-9", "starship", "falcon heavy"];
+    var topics = ["airplane", "helicopter", "spaceship", "glider", "f-16", "f-22", "f-35", "p51 Mustang", "cessna", "cirrus sr22", "boeing", "falcon-9", "starship", "falcon heavy", "gyrocopter", "hang glider", "f14 tomcat"];
 
     buttonCreate();
 
