@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+
 
     // Array that holds the topics for the gifs
     var topics = ["airplane", "helicopter", "spaceship", "glider", "f-16", "f-22", "f-35", "p51 Mustang", "cessna", "cirrus sr22", "boeing", "falcon-9", "starship", "falcon heavy", "gyrocopter", "hang glider", "f14 tomcat"];
@@ -15,7 +15,7 @@
             $(".aircraft-buttons").append(aircraftBtn);
         };
     };    
-// });
+
 
     // Click event that pulls the gifs based on the button clicked
     $(document).on("click",".aircraft",function(){
@@ -51,12 +51,13 @@
                 $(".gifs").prepend(gDiv);
             };
 
+            
+
+
             // Click event that animates and stills the gifs
             $(".gif").on("click", function() { 
                 var state = $(this).attr("data-state");
-                // console.log(state);
-                // console.log(this);
-
+                
                 if (state === "still") {
                     $(this).attr("src", $(this).attr("data-animate"));
                     $(this).attr("data-state", "animate");
@@ -79,3 +80,4 @@
 
         buttonCreate();
     });
+
