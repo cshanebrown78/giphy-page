@@ -77,6 +77,8 @@
         console.log(newAircraft);
         topics.push(newAircraft);
         console.log(topics);
+        $("#add-aircraft").val("");
+
 
         buttonCreate();
     });
